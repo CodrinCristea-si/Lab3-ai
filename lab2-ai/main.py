@@ -113,20 +113,6 @@ def readGML(fileName):
     net['degrees'] = degrees
     return net
 
-"""
-Initializeaza o matrice de adiacenta de noNodes x noNodes
-noNodes- dimensiunea matricei
-Returneaza o matricea cu dimensiunea de mai sus, plina cu valori de 0
-"""
-def init_mat(noNodes):
-    mat = []
-    for i in range(noNodes):
-        #adaugam cate o linie noua si goala
-        mat.append([])
-        for j in range(noNodes):
-            #adaugam cate un 0 in fiecare linie
-            mat[i].append(0)
-    return mat
 
 """
 Afiseaza un plot
